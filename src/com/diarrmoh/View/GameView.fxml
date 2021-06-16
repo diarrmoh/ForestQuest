@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../Data/CSS/Game.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.diarrmoh.Controller.GameController">
+   <children>
+      <Pane id="gamePane" fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <ImageView fx:id="player1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="player2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow1" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow2" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow3" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow4" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow5" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow6" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow7" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow8" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow9" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="arrow10" fitHeight="40.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock3" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock4" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock5" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock8" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="rock10" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane id="menuPane" fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0">
+               <children>
+                  <TabPane id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="100.0" tabMaxWidth="100.0" tabMinHeight="30.0" tabMinWidth="300.0">
+                    <tabs>
+                      <Tab text="Setting">
+                        <content>
+                          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0">
+                                 <children>
+                                    <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0">
+                                       <children>
+                                          <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="400.0">
+                                             <children>
+                                                <Button mnemonicParsing="false" onAction="#exit" text="Exit" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                   <graphic>
+                                                      <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Data/exit.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button mnemonicParsing="false" onAction="#backToMenu" text="Home" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                   <graphic>
+                                                      <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../Data/home.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Options">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </VBox>
+            <ImageView fitHeight="300.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </children>
+</StackPane>
